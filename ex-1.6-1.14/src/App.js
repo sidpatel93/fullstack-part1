@@ -23,7 +23,7 @@ const App = () => {
   const [bad, setBad] = useState(0)
 
   const total = good + neutral + bad;
-  const average = (good - bad)/total;
+  const average = (good - bad) / total;
   const positive = (good/total) * 100;
 
   return (
