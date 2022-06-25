@@ -8,7 +8,7 @@ const Button = ({handler, label}) => {
   )
 }
 
-const Display = ({title, count}) => {
+const StatisticLine = ({title, count}) => {
 return (
   <>
     <p>{title} {count}</p> 
@@ -27,12 +27,12 @@ const Statistics = (props) => {
   }
   return (
     <>
-    <Display title={"good"} count={good} />
-    <Display title={"neutral"} count={neutral} />
-    <Display title={"bad"} count={bad} />
-    <Display title={"all"} count={total} />
-    <Display title={"average"} count={average} />
-    <Display title={"positive"} count={positive + " %"} />
+    <StatisticLine title={"good"} count={good} />
+    <StatisticLine title={"neutral"} count={neutral} />
+    <StatisticLine title={"bad"} count={bad} />
+    <StatisticLine title={"all"} count={total} />
+    <StatisticLine title={"average"} count={average} />
+    <StatisticLine title={"positive"} count={positive + " %"} />
     </>
   )
 }
