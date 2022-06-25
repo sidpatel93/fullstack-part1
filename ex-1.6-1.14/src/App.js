@@ -11,7 +11,10 @@ const Button = ({handler, label}) => {
 const StatisticLine = ({title, count}) => {
 return (
   <>
-    <p>{title} {count}</p> 
+    <tr>
+      <td>{title}</td>
+      <td>{count}</td>
+    </tr> 
   </>
 )
 }
@@ -63,10 +66,13 @@ const App = () => {
       <Button label={"good"} handler={() => setGood(good + 1)} />
       <Button label={"neutral"} handler={() => setNeutral(neutral +1)} />
       <Button label={"bad"} handler={() => setBad(bad +1)} />
+
       <h2>
         Statistics
       </h2>
+      <table>
       <Statistics stats={stats} />
+      </table>
     </div>
   )
 }
