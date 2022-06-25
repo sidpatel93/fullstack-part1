@@ -22,6 +22,10 @@ const App = () => {
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
+  const total = good + neutral + bad;
+  const average = (good - bad)/total;
+  const positive = (good/total) * 100;
+
   return (
     <div>
       <h2>
@@ -36,6 +40,9 @@ const App = () => {
       <Display title={"good"} count={good} />
       <Display title={"neutral"} count={neutral} />
       <Display title={"bad"} count={bad} />
+      <Display title={"all"} count={total} />
+      <Display title={"average"} count={average} />
+      <Display title={"positive"} count={positive + " %"} />
     </div>
   )
 }
