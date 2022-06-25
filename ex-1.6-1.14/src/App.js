@@ -24,7 +24,7 @@ const Statistics = (props) => {
   if (total <= 0) {
     return (
       <>
-      <p>No Feedback is given</p>
+      <tr><td>No Feedback is given</td></tr>
       </>
     )
   }
@@ -71,7 +71,9 @@ const App = () => {
         Statistics
       </h2>
       <table>
-      <Statistics stats={stats} />
+        <tbody>
+        <Statistics stats={stats} />
+        </tbody>
       </table>
     </div>
   )
