@@ -61,7 +61,7 @@ const App = () => {
   return (
     <div>
       <h2>
-        give feedback
+        Give feedback
       </h2>
       <Button label={"good"} handler={() => setGood(good + 1)} />
       <Button label={"neutral"} handler={() => setNeutral(neutral +1)} />
